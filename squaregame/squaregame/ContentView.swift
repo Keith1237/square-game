@@ -25,14 +25,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    let baseColors: [Color] = [.red, .green, .blue, .yellow, .purple] // Five colors to be used across nine buttons
-    @State private var colors: [Color] = [] // Track current colors on buttons
-    @State private var selectedColors: [Color] = [] // Track selected colors
-    @State private var score: Int = 0 // Track the score
-    @State private var gameOver: Bool = false // Track if the game is over
+    let baseColors: [Color] = [.red, .green, .blue, .yellow, .purple] 
+    @State private var colors: [Color] = []
+    @State private var selectedColors: [Color] = []
+    @State private var score: Int = 0
+    @State private var gameOver: Bool = false
 
     init() {
-        _colors = State(initialValue: generateRandomColors()) // Initialize colors array with random colors
+        _colors = State(initialValue: generateRandomColors())
     }
 
     var body: some View {
@@ -52,14 +52,14 @@ struct ContentView: View {
                             handleButtonClick(color: colors[index])
                         }) {
                             Rectangle()
-                                .fill(colors[index]) // Fill with current color
-                                .aspectRatio(1, contentMode: .fit) // Makes the button a square
+                                .fill(colors[index])
+                                .aspectRatio(1, contentMode: .fit)
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                     }
                 }
-                .padding(10) // Padding inside the border
-                .border(Color.black, width: 4) // Add a single border around the entire grid
+                .padding(10)
+                .border(Color.black, width: 4)
             }
         }
         .padding()
@@ -77,12 +77,12 @@ struct ContentView: View {
         
         if selectedColors.count == 2 {
             if selectedColors[0] == selectedColors[1] {
-                score += 1 // Increase score if colors match
-                colors = generateRandomColors() // Refresh the colors randomly
+                score += 1
+                colors = generateRandomColors()
             } else {
-                gameOver = true // End the game if colors don't match
+                gameOver = true
             }
-            selectedColors.removeAll() // Reset the selection after each pair of clicks
+            selectedColors.removeAll()
         }
     }
     
@@ -90,18 +90,18 @@ struct ContentView: View {
         score = 0
         gameOver = false
         selectedColors.removeAll()
-        colors = generateRandomColors() // Reset the colors to a new random arrangement
+        colors = generateRandomColors()
     }
     
     func generateRandomColors() -> [Color] {
-        var randomColors = baseColors // Start with the base colors
+        var randomColors = baseColors
         
-        // Add random elements to make up the remaining 4 slots
+        
         while randomColors.count < 9 {
             randomColors.append(baseColors.randomElement()!)
         }
         
-        return randomColors.shuffled() // Shuffle the colors array
+        return randomColors.shuffled()
     }
 }
 
