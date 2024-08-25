@@ -11,7 +11,6 @@ import SwiftUI
 struct squaregameApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
+            InitialPage()        }
     }
 }

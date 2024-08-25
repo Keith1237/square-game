@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1480D92C764A8A0099A856 /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1480D82C764A8A0099A856 /* mainPage.swift */; };
+		0A1480DC2C76C4780099A856 /* InitialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1480DB2C76C4780099A856 /* InitialPage.swift */; };
 		0AEBE4712C70E9B800DCC305 /* squaregameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBE4702C70E9B800DCC305 /* squaregameApp.swift */; };
 		0AEBE4732C70E9B800DCC305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEBE4722C70E9B800DCC305 /* ContentView.swift */; };
 		0AEBE4752C70E9B900DCC305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEBE4742C70E9B900DCC305 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A1480D82C764A8A0099A856 /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
+		0A1480DB2C76C4780099A856 /* InitialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialPage.swift; sourceTree = "<group>"; };
 		0AEBE46D2C70E9B800DCC305 /* squaregame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = squaregame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AEBE4702C70E9B800DCC305 /* squaregameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = squaregameApp.swift; sourceTree = "<group>"; };
 		0AEBE4722C70E9B800DCC305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,7 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				0AEBE4702C70E9B800DCC305 /* squaregameApp.swift */,
+				0A1480DB2C76C4780099A856 /* InitialPage.swift */,
 				0AEBE4722C70E9B800DCC305 /* ContentView.swift */,
+				0A1480D82C764A8A0099A856 /* mainPage.swift */,
 				0AEBE4742C70E9B900DCC305 /* Assets.xcassets */,
 				0AEBE4762C70E9B900DCC305 /* Preview Content */,
 			);
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AEBE4732C70E9B800DCC305 /* ContentView.swift in Sources */,
+				0A1480D92C764A8A0099A856 /* mainPage.swift in Sources */,
 				0AEBE4712C70E9B800DCC305 /* squaregameApp.swift in Sources */,
+				0A1480DC2C76C4780099A856 /* InitialPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
